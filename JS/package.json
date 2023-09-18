@@ -1,0 +1,16 @@
+{
+  "devDependencies": {
+    "esbuild": "^0.19.3",
+    "jasmine": "^5.1.0",
+    "jasmine-browser-runner": "^2.3.0",
+    "jasmine-core": "^5.1.1"
+  },
+  "scripts": {
+  "test": "jasmine",
+  "test-browser": "npm run bundle-tests && jasmine-browser-runner serve",
+  "bundle-tests": "node esbuild.config.js"
+},
+  "dependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
